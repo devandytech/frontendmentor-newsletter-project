@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="tailwind.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/Newsletter-signup/Scripts/script.js"></script>
+  <title>Sign Up</title>
+  
+  <style type="text/css">
+    .error {
+      color: hsl(4, 100%, 67%);
+    }
+    input.error-state:focus {
+      border: 2px solid hsl(4, 100%, 67%);
+    }
+  </style>
+</head>
+
+<body class="w-full min-h-screen text-[16px] text-[hsl(234,29%,20%)] font-roboto font-[400] md:w-full md:bg-[hsl(234,29%,20%)]">
+  <!-- container -->
+  <div class="container bg-[hsl(0,0%,100%)] w-[100%] mx-auto mb-10 md:w-[80%] md:flex flex-row-reverse md:mt-10 md:pl-10 md:pr-5 md:py-5 gap-8 md:rounded-3xl">
+    <!-- image container for alignment -->
+    <div class="w-[100%] h-[18rem] md:w-[50%] md:h-auto">
+      <div class=" h-[inherit] rounded-bl-2xl rounded-br-2xl bg-[url('illustration-sign-up-mobile.svg')] md:h-[100%] md:bg-[url('illustration-sign-up-desktop.svg')] bg-cover bg-center bg-no-repeat md:rounded-xl" ></div>
+    </div>
+    
+    <!-- Details container for info -->
+    <div class="w-[90%] m-auto bg-[hsl(0, 0%,58%)] md:w-[50%] md:mx-auto">
+      <h1 class="text-[30px]  font-[700] font-extrabold mt-8 mb-4 md:text-[40px] md:mt-7 md:mb-3">Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      
+      <div class="mt-7 mb-10 md:mt-5 md:mb-5">
+        <div class="flex gap-5">
+          <span class="p-3.5 md:p-3 bg-[url('icon-list.svg')] bg-contain bg-center bg-no-repeat self-start"></span>
+          <p>Product discovery and building what matter</p>
+        </div>
+        <div class="flex gap-5 my-4 md:my-3">
+          <span class="p-3.5 md:p-3 bg-[url('icon-list.svg')] bg-contain bg-center bg-no-repeat self-start"></span>
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="flex gap-5">
+          <span class="p-3.5 md:p-3 bg-[url('icon-list.svg')] bg-contain bg-center bg-no-repeat"></span>
+          <p>And much more!</p>
+        </div>
+      </div>
+      
+      <!-- form -->
+      <form action="/Newsletter-signup/Advanced Practice /confirm-page.html" class="my-2 md:mt-10" id="form-validation">
+        <div class="flex justify-between text-[12px] font-[700]">
+          <span class="">Email address</span> <br>
+          <span class="error"></span>
+        </div>
+        <input class="w-[100%] mt-2  px-6 py-3 rounded-lg border border-[hsl(234,29%,20%)] border-solid" type="email" name="email" id="email" placeholder="email@company.com"> <br>
+        
+        <button type="submit" class="button1 w-[100%] mt-5 mb-10 text-[hsl(0,0%,100%)] bg-[hsl(234,29%,20%)] py-3 rounded-lg mx-auto block border">Subscribe to monthly newsletter</button>
+      </form>
+      
+    </div>
+  </div>
+</body>
+
+</html>
