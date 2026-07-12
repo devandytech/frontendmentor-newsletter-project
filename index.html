@@ -21,19 +21,19 @@
     }
 
     /* Button hover/active styles to match the design (pink → orange gradient + soft glow) */
-    .button1, .button2 {
+    .button1 {
       transition: background 200ms ease, box-shadow 220ms ease, transform 120ms ease;
       background: hsl(234,29%,20%); /* keep original dark color as default */
       color: hsl(0,0%,100%);
     }
 
-    .button1:hover, .button2:hover {
+    .button1:hover {
       background: linear-gradient(90deg, #ff7a92 0%, #ff6b66 48%, #ff6b3a 100%);
       box-shadow: 0 18px 30px rgba(255, 99, 107, 0.28);
       transform: translateY(-3px);
     }
 
-    .button1:focus-visible, .button2:focus-visible {
+    .button1:focus-visible {
       outline: 3px solid rgba(255,99,107,0.14);
       outline-offset: 4px;
     }
